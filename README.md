@@ -13,16 +13,16 @@ Because of the way Rust restrictions and my knowledge about it, those two types 
 
 ### Logic Ports
 The logic ports are represented by: \
-AND = $\lambda$$x^{ Boolean }$$\lambda$y.x Boolean y ***F*** \
-OR = $\lambda$$x^{ Boolean }$$\lambda$y.x Boolean ***T*** y \
-NOT = $\lambda$$x^{ Boolean }$.x Boolean ***F*** ***T*** 
+**AND** - $\lambda$$x^{ Boolean }$$\lambda$y.x Boolean y ***F*** \
+**OR** - $\lambda$$x^{ Boolean }$$\lambda$y.x Boolean ***T*** y \
+**NOT** - $\lambda$$x^{ Boolean }$.x Boolean ***F*** ***T*** 
 
 That can be readen by: \
-AND = takes a *x* thats a Boolean and a *y*, consider *y* and ***F*** as booleans and apply *y* and ***F*** into x \
-OR = takes a *x* thats a Boolean and a *y*, consider *y* and ***T*** as booleans and apply *y* and ***F*** into x \
-NOT = takes a *x* thats a boolean and apply to it ***F*** and ***T*** as booleans.
+**AND** - takes a *x* thats a Boolean and a *y*, consider *y* and ***F*** as booleans and apply *y* and ***F*** into x \
+**OR** - takes a *x* thats a Boolean and a *y*, consider *y* and ***T*** as booleans and apply *y* and ***F*** into x \
+**NOT** - takes a *x* thats a boolean and apply to it ***F*** and ***T*** as booleans.
 
 Verbose explanation of the logic ports: \
-AND = Case x is True, it will return the first argument that happens to be y, so if y is True, the port returns true. Otherwise returns false. \
-OR = In case x is True, it will return the first argument that happens to be True. Case x is False, it will return the second argument that happens to be y, so if y is True, then the port returns true. Otherwise returns false. \
-NOT = In case x is True, it will return the first argument that happens to be False. In case x is False, it will return the second argument that happens to be True.
+**AND** - Case x is True, it will return the first argument that happens to be y, so if y is True, the port returns true. Otherwise returns false. \
+**OR** - In case x is True, it will return the first argument that happens to be True. Case x is False, it will return the second argument that happens to be y, so if y is True, then the port returns true. Otherwise returns false. \
+**NOT** - In case x is True, it will return the first argument that happens to be False. In case x is False, it will return the second argument that happens to be True.
